@@ -5,13 +5,21 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
         <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="styleloader.css">
         
         <title>Pig Game</title>
     </head>
 
-    <body>
+    <body onload="myFunction()"> 
         
-        <div class="wrapper clearfix">
+        <div class="loader-wrapper">
+                <span class="loader">
+                    <span class="loader-inner"></span>
+                </span>
+        </div>
+
+        <div class="wrapper clearfix" style="display:none;">
+
             <div class="player-0-panel active">
                 <div class="player-name" id="name-0">Player 1</div>
                 <div class="player-score" id="score-0">43</div>
@@ -71,8 +79,11 @@
             </div>
         </div>
        
-        <script src="app.js"></script>
-        
+        <script type="text/javascript" src="app.js"></script>
+    
+        <script type="text/javascript" src="loader.js">
+            
+        </script>        
     </body>
 </html>
 

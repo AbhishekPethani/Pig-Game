@@ -1,4 +1,3 @@
-
 var scores, roundScore, activePlayer, gamePlaying, target, dice1Source, dice2Source;
 
 init();
